@@ -1,0 +1,235 @@
+/* === GENERAL === */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #F9FBFD, #FFF5E9);
+  color: #333;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.navbar.scrolled {
+  background: rgba(255,255,255,0.75);
+}
+.logo {
+  width: 40px;
+  height: auto;
+}
+.brand-title {
+  font-family: 'Chewy', cursive;
+  color: #AB5900;
+  font-size: 1.4rem;
+}
+.nav-link {
+  color: #AB5900 !important;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #EA9840 !important;
+}
+
+/* === HERO === */
+.hero {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(160deg, #FFF1E0, #F9FBFD);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  font-family: 'Chewy', cursive;
+  color: #AB5900;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.hero .lead {
+  color: #6C3906;
+  font-size: 1.1rem;
+}
+.btn-cta {
+  background-color: #EA9840;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-cta:hover {
+  background-color: #AB5900;
+  color: white;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  font-family: 'Chewy', cursive;
+  color: #AB5900;
+  font-size: 2rem;
+}
+
+/* === ABOUT === */
+#about {
+  background: linear-gradient(180deg, #FFF5E9, #F9FBFD);
+  color: #6C3906;
+  line-height: 1.8;
+}
+
+/* === PRODUK === */
+#produk {
+  background: linear-gradient(180deg, #F9FBFD, #FFF5E9);
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.card-title {
+  font-family: 'Chewy', cursive;
+  color: #AB5900;
+}
+.card-text {
+  color: #6C3906;
+}
+
+/* === CONTACT === */
+#contact {
+  background: linear-gradient(180deg, #FFF5E9, #F9FBFD);
+}
+#contact input,
+#contact textarea {
+  border-radius: 10px;
+  border: 1.5px solid #EA9840;
+}
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #AB5900;
+  box-shadow: 0 0 5px rgba(171, 89, 0, 0.3);
+}
+
+/* === FOOTER === */
+footer {
+  background: #FFF5E9;
+  color: #AB5900;
+  font-weight: 500;
+}
+
+/* === LOGIN PAGE === */
+.login-body {
+  background: linear-gradient(160deg, #F9FBFD, #FFF1E0);
+  min-height: 100vh;
+}
+.login-card {
+  max-width: 400px;
+  border: 2px solid #F7B658;
+  border-radius: 15px;
+  background: white;
+}
+.login-logo {
+  width: 70px;
+  height: auto;
+}
+.login-card .form-control {
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+/* === PASSWORD TOGGLE === */
+.input-group .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.7rem;
+  font-size: 1.05rem;
+}
+.input-group .form-control {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+/* === DARK MODE === */
+body.dark {
+  background: linear-gradient(180deg, #1b1b1b, #2a2a2a);
+  color: #f5f5f5;
+}
+
+/* Navbar dark mode */
+body.dark .navbar {
+  background: rgba(25,25,25,0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+}
+body.dark .navbar.scrolled {
+  background: rgba(25,25,25,0.75);
+}
+
+/* Link warna di dark mode */
+body.dark .navbar .nav-link {
+  color: #f5f5f5 !important;
+}
+body.dark .navbar .nav-link:hover {
+  color: #F7B658 !important;
+}
+
+/* Elemen lain dark mode */
+body.dark .brand-title,
+body.dark .section-title,
+body.dark footer {
+  color: #F7B658;
+}
+body.dark .btn-cta {
+  background-color: #B25F20;
+}
+body.dark footer {
+  background: #2a2a2a;
+  color: #fff;
+}
+body.dark .lead {
+  color: #000000;
+}
+
+/* === LOGOUT NAV LINK === */
+.navbar .nav-link.text-danger {
+  color: #E63946 !important;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.text-danger:hover {
+  color: #ff1e1e !important;
+}
+
+/* Saat dark mode aktif */
+body.dark .navbar .nav-link.text-danger {
+  color: #FF6B6B !important;
+}
+
+body.dark .navbar .nav-link.text-danger:hover {
+  color: #ff8787 !important;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .brand-title {
+    font-size: 1.2rem;
+  }
+}
